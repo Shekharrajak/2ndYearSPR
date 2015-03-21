@@ -1,0 +1,118 @@
+Using Adobe dreamweaver very simple method to create a Image slider using jQuery : 
+(I am prefering adobe dreamweaver editor for writting code.)
+	1. Open and create project give name any ,i am giving name as img slider.
+	2.should have one folder ,i am creating this in desktop named slider and save project there with photos
+	you want to be showed in the image slider.
+	3.open any browser and go to jQuery.com and click on download button and click on "download the compressed production jQuery2.03".
+	4.you will get a page with lots of code .save page in the folder slider.
+	5.now go to jQuery.malsup.com  , now go to cycle plugin  ,download the cycle plugin , click on cycle plugin,
+	6.save this page in slider folder.
+	7.open dreamweaver and insert the script in your html code(at head ) : jQuery library function and jQuery cycle plugin.
+	8.create a div name slider  ; now insert images in that div using insert tool from the folder slider in desktop.
+	9. now write this code inside head :  
+	
+	<script type ="text/javascript">
+	$('#slider')cycle({})
+	</script>
+	10.save and run in browser.
+	
+	Hey now you done.
+	
+This is very simple way to create image slider but this is not have much controls and functions . now below I am showing how to create pager and 
+next ,previous page buttons,image description and name  on the images.
+	
+	1.I am creating here these follows id : 
+			a)hero
+					b)pager
+					c)next
+					d)prev
+					e)slider
+							i)div class = slider-item;
+							ii)h2 class = caption;
+							iii)h3 class= desc;
+							iv)img  which you want to slide.
+							copy and paste these i to iv step for other img.
+							(copy paste these code ,and giveimage source)
+							
+		b,c,d,e are inside the hero id .
+		
+	2. make css code inside style : 
+			2.1) for hero id:
+					width:
+					height:
+					display:
+					position:
+					margin:
+					border:
+					border-radius:
+					-webkit-box-shadow:
+		give these according to your convenience , my code can be seen 
+		in the pictures attached.
+		2.2) for slider id :
+					width:
+					height:
+					display:
+					position:
+	
+		2.3)for next and prev id :
+				you can use dreamweaver functionalities also to insert images and other designing options.
+		
+		
+		2.4)go to the jQuery part and add some code there:
+				->fx:   'scrollHorz'
+				(this fx gives very beautiful slide to images)
+				->timeout : 2000
+				(this timeout option give delay between two slides )
+				-> next : "#next"
+				-> prev : "#prev"
+				(these two activate the functions of left and right arrow)
+				->pager : "# pager"
+				->pause: 1
+		
+	3)caption fixing :
+		css part 
+			.caption{
+				width:
+				height:
+				line-height:
+				text-align:
+				display:
+				position:
+				background-color:
+				color:
+				border-top-right-radius:
+				border-bottom-right-radius:
+			}
+		copy these properity for desc class.add {top : 60px} (for me here) to this.
+	4) css for pager id 
+			width:
+			display:
+			position:
+			z-index:99;
+			text-align:
+			bottom:20px;(top make it at bottom above 20 px)
+	
+	5)#pager a {
+		width:
+		height:
+		display:inline;
+		position:
+		background-color:
+		border:
+		margin:
+		border-radius:
+		font-size:.0em;(tiniest size)
+		color:transparent;
+	}	
+	6)#pager a.activeSlide{
+	background-color:white;
+	
+	
+	
+	}
+you can add a lot of things inside that and give it more and more beautiful look to it.
+
+but here it is beautiful enough image slide has been created.To make it more clear I have attached some screenshot for the convenience of learner
+to understand the code better.
+
+thankyou...:)	

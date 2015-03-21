@@ -1,0 +1,84 @@
+
+
+I am here assuming that learner already know the basics of html,css,JS
+and Jquery.I prefer Dreamweaver as my code editor.You can directly do some code in this code editor.
+
+---First of all Think about how should your image slider display.Scratch on copy.
+Think about CSS and jquery part .---
+
+----------------------------------------------------------------------------------------------------------
+ 
+Explaination of CODE-1:
+
+---This is very simple image slider with just sliding function ------
+
+
+1.add the jquery library code/function in your code before writting jquery 
+code (ohterwise jquery code won't work) and also add the jquery cycle plugin
+inside the head tag.
+
+2.now write jquery code:
+	'$' this is for jquery 
+	('id or class name').Event
+	({give function whatever you want ,leave it blank if you want nothing to be happen });
+
+3.now come to the css part inside style tag:
+		select slider id using #slider{
+			write the design here;
+		}
+
+4. now come to the body part of the code:
+	since we want the slider design on all images, we are putting 
+	images inside the div of id="slider".
+
+And yeah you have done .save as html file and run in browser.
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+CODE-2  Explaination :
+
+---Here what I want to do is :My Slider will have next  " > "and prev " < " ,to controll
+the slider .There will be pager 1,2,3 but it will show like " o " instead of numbers.
+There will description and Learn More  option ,which is take you to more detail on that image.
+There will be image name on the left-top corner.-------
+
+
+
+I am here putting more functions inside the slider.
+
+1.In jquery part :
+	fx: 'scrollHorz'  <!---for loop-->
+	timeout:2000<!---delay of 2sec for everyslide-->
+	next: 		<!---controll for next slide-->
+	prev:		<!---control for pre slide-->
+	pager:		<!---controll for pager-->
+	pause:	1	<!---means whenever you hover on image it stops there,not sliding-->
+
+2.now css part :
+		here we have 7 class and IDs 
+		id:
+			hero
+			slider
+			next
+			prev
+			pager
+		class:	
+			caption
+			desc
+we are adjusting the width,height,position and other properties of
+that class and id.
+			
+3.In the body part we are giving the id and class ,where it is required,
+
+And yeah you have done now save this as html file and run on browser.
+------------------------------------------------------------------------------------------
+Actually this is very simple but very effective of of making image Slider
+using jquery.We can add a lots of things and can make it more attractive ,actually
+this is upon coder's creative mind .
+-----------------------------------------------------------------------------------------
+
+Sources: 
+					I have learned most of the things from my seniors. I have watched 
+some videos on youtube ,but I am not using these complex things here.
+-------------------------------------------------------------------------------------------

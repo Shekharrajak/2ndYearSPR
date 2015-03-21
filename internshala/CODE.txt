@@ -1,0 +1,193 @@
+
+-----------------------------------------------------------------
+CODE-1:
+
+<!---this is very simple method of making image slider using jquery,but it just slide ,no more fucntion-->
+<!doctype html>
+<html>
+<head>
+<meta charset ="UTF-8">
+<title >Image Slider using Jquery Simple method </tittle>
+<script type ="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type ="text/javascript" src="jquery.cycle.all.js"></script>
+<script type ="text/javascript" >
+$('#slider').cycle({
+
+
+});
+</script>
+<style type="text/css">
+#slider{
+	margin:auto;
+
+}
+</style>
+</head>
+<body>
+
+<div id="slider">
+
+<img src="image1.jpg" width="1500" height="500">
+<img src="image2.jpg" width="1500" height="500">
+<img src="image3.jpg" width="1500" height="500">
+<img src="image4.jpg" width="1500" height="500">
+<img src="image5.jpg" width="1500" height="500">
+
+</div>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+CODE-2:
+
+<!---this is another way of making slider ,and have more control options-->
+<!doctype html>
+<html>
+<head>
+<meta charset ="UTF-8">
+<title >Image Slider using Jquery Simple method </tittle>
+<script type ="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type ="text/javascript" src="jquery.cycle.all.js"></script>
+<script type ="text/javascript" >
+$('#slider').cycle({
+	fx:		'scrollHorz',
+	timeout:2000,
+	next:"#next",
+	prev:"#prev",
+	pager:"#pager",
+	pause :1
+
+
+});
+</script>
+<style type="text/css">
+#hero{
+	width:960px;
+	height:500px;
+	display:block;
+	position:relative;
+	margin:20px auto;
+	border:10px solid #FFF;
+	border-radius:7px;
+	box-shadow:0 0 1px 1px #E3E3E3;
+	-webkit-box-shadow:0 0 1px #E3E3E3;
+}
+#slider{
+	width:960px;
+	height:500px;
+	display:block;
+	position:absolute;
+
+}
+
+#next{
+	background:url(right-arrow.png) no repeat center center;
+	display:block;
+	float:right;
+	height:100%;
+	width:100px;
+	position:relative;
+	z-index:99;
+	cursor: pointer;
+}
+
+
+#prev{
+	background:url(left-arrow.png) no repeat center center;
+	display:block;
+	float:left;
+	height:100%;
+	width:100px;
+	position:relative;
+	z-index:99;
+	cursor: pointer;
+}
+
+.caption{
+	width:400px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	display:block;
+	position:absolute;
+	background-color:rgba(0,0,0,.3);
+	color:#FFF;
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
+}
+
+.desc{
+	width:400px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	display:block;
+	position:absolute;
+	background-color:rgba(0,0,0,.3);
+	color:#FFF;
+	top:60px;
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
+}
+#pager{
+	width:100%;
+	text-align:center;
+	display:block;
+	position:absolute;
+	z-index:99;
+	bottom:20px;
+
+}
+#pager a {
+	width:10px;
+	height:10px;
+	display:inline-block;
+	position:relative;
+	background-color:#333;
+	border:1px solid #333;
+	margin:0 10px;
+	border-radius:20px;
+	font-size:.0em;
+	color:transparent;
+}
+#pager a.activeSlide{
+	background-color:#FFF;
+}
+
+</style>
+
+</head>
+<body>
+<div id="hero">
+<div id="pager"></div><!---End --pager-->
+<div id="next"></div><!---End --next-->
+<div id="prev"></div><!---End --prev-->
+
+<div id="slider">
+
+<div class ="slider-item">
+<h2 class ="caption">Image1<h2>
+<h3 class ="desc"><a href="www.descriptonOfThePic.com">Learn more</a></h3>
+<img src="image1.jpg"/>
+</div><!---end--slider--item-->
+
+<div class ="slider-item">
+<h2 class ="caption">Image1<h2>
+<h3 class ="desc"><a href="www.descriptonOfThePic.com">Learn more</a></h3>
+<img src="image2.jpg"/>
+</div><!---end--slider--item-->
+
+<div class ="slider-item">
+<h2 class ="caption">Image1<h2>
+<h3 class ="desc"><a href="www.descriptonOfThePic.com">Learn more</a></h3>
+<img src="image3.jpg"/>
+</div><!---end--slider--item-->
+
+
+</div><!---end--slider-->
+
+</div><!---end--hero-->
+
+</body>
+</html>
