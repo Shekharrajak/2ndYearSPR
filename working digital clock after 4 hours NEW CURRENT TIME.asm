@@ -17,7 +17,8 @@ setcurser macro col
     mov dl,col
     int 10h
 endm 
-
+        
+        
 PRINT MACRO M 
     
     MOV AH,02H
