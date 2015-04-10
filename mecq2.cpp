@@ -17,6 +17,7 @@ int matched(char *x) {
       if(s.empty()) return 0;
       if(&s.top() == "(") return 1;
       else return 0;
+      
     }
   }
   return s.empty();
