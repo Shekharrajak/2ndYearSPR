@@ -17,6 +17,7 @@ jmp start
    add di, 75			;column 76
    mov al,colour		;cannot do mem-mem copy so use reg
    mov cx, 160			;loop counter
+   
   hplot:
     mov es:[di],al		;set pixel to colour
     inc di			;move to next pixel
